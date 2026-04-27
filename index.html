@@ -1,221 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kawsher Hamid | Backend Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Kawsher Hamid Mazumder | Full-Stack Software Engineer</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif;}
+    body{background:#0b1220;color:#e5e7eb;line-height:1.6;}
+    a{color:#38bdf8;text-decoration:none;}
 
-<style>
-:root {
-    --primary: #0f172a;
-    --accent: #3b82f6;
-    --light: #f8fafc;
-    --gray: #64748b;
-}
+    header{
+      position:sticky;top:0;z-index:100;
+      background:#0f172a;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 10%;border-bottom:1px solid #1f2937;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    header h1{font-size:16px;color:#38bdf8;letter-spacing:0.5px;}
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: var(--light);
-    color: var(--primary);
-}
+    nav a{margin-left:16px;font-size:13px;color:#cbd5e1;}
+    nav a:hover{color:#38bdf8;}
 
-header {
-    background: var(--primary);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
+    .hero{
+      padding:90px 10%;text-align:left;
+      background:radial-gradient(circle at top,#111827,#0b1220);
+    }
 
-header h1 {
-    font-size: 2.5rem;
-}
+    .hero h2{font-size:40px;margin-bottom:10px;}
+    .hero p{color:#94a3b8;max-width:800px;font-size:16px;}
 
-header p {
-    margin-top: 10px;
-    color: #cbd5f5;
-}
+    .meta{
+      margin-top:14px;color:#cbd5e1;font-size:13px;
+    }
 
-nav {
-    background: white;
-    text-align: center;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+    section{padding:70px 10%;}
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: var(--primary);
-    font-weight: 600;
-}
+    h3{color:#38bdf8;font-size:20px;margin-bottom:18px;}
 
-nav a:hover {
-    color: var(--accent);
-}
+    .card{
+      background:#111827;
+      border:1px solid #1f2937;
+      padding:18px;
+      border-radius:10px;
+      margin-bottom:14px;
+    }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:10px;
+    }
 
-section {
-    margin-bottom: 50px;
-}
+    .tag{
+      display:inline-block;
+      background:#1e293b;
+      padding:6px 10px;
+      border-radius:6px;
+      font-size:12px;
+      margin:4px;
+      color:#cbd5e1;
+    }
 
-h2 {
-    margin-bottom: 20px;
-    border-left: 5px solid var(--accent);
-    padding-left: 10px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.skills span {
-    display: inline-block;
-    background: #e2e8f0;
-    padding: 8px 12px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.project h3 {
-    margin-bottom: 5px;
-}
-
-.contact a {
-    display: block;
-    margin: 5px 0;
-    color: var(--accent);
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--primary);
-    color: white;
-}
-</style>
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#64748b;
+      border-top:1px solid #1f2937;
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
-    <h1>Md Kawsher Hamid Mazumder</h1>
-    <p>Backend-Focused Full Stack Engineer | Java | Spring Boot | Microservices</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
+  <h1>MdKawsher Mazumder</h1>
+  <nav>
+    <a href="#summary">Summary</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
+</header>
 
-<div class="container">
+<section class="hero">
+  <h2>Backend-Focused Software Engineer</h2>
+  <p>
+    5+ years of experience building scalable backend systems using Java, Spring Boot, and microservices.
+    Strong focus on performance optimization, security, and distributed systems architecture.
+  </p>
+  <div class="meta">
+    Dhaka, Bangladesh • +880-1799397962 • kawsher.98@gmail.com • GitHub • LinkedIn
+  </div>
+</section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Backend-focused full stack engineer with 5+ years of experience building secure, scalable applications 
-        using Java, Spring Boot, and microservices. Strong in performance optimization, system design, and 
-        clean architecture.
-    </p>
+<section id="summary">
+  <h3>Summary</h3>
+  <div class="card">
+    Backend-Focused Full Stack Engineer with experience in designing secure, scalable, and high-performance systems.
+    Skilled in REST APIs, microservices, database optimization, CI/CD, and cloud-ready architecture using Docker and Jenkins.
+  </div>
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>Node.js</span>
-        <span>Next.js</span>
-        <span>PHP</span>
-        <span>React</span>
-        <span>MongoDB</span>
-        <span>PostgreSQL</span>
-        <span>Docker</span>
-        <span>Jenkins</span>
-        <span>Microservices</span>
-        <span>AWS</span>
-        <span>OAuth2</span>
-        <span>Kafka / MQ</span>
-    </div>
+  <h3>Technical Skills</h3>
+  <div class="card">
+    <strong>Backend:</strong><br/>
+    <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Hapi.js</span>
+    <br/><br/>
+
+    <strong>Frontend:</strong><br/>
+    <span class="tag">React.js</span><span class="tag">Vue.js</span><span class="tag">JSP</span><span class="tag">Bootstrap</span>
+    <br/><br/>
+
+    <strong>Databases:</strong><br/>
+    <span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Oracle</span>
+    <br/><br/>
+
+    <strong>DevOps:</strong><br/>
+    <span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Git</span><span class="tag">Bash</span>
+    <br/><br/>
+
+    <strong>Architecture:</strong><br/>
+    <span class="tag">Microservices</span><span class="tag">OAuth2</span><span class="tag">JWT</span><span class="tag">ActiveMQ</span><span class="tag">Performance Tuning</span>
+  </div>
 </section>
 
 <section id="experience">
-    <h2>Experience</h2>
+  <h3>Experience</h3>
 
-    <div class="card">
-        <h3>Associate Software Engineer</h3>
-        <p><b>Dynamic Solution Innovators</b> | 2024 - Present</p>
-        <p>Improved database performance, implemented fault-tolerant systems, and enhanced system security.</p>
-    </div>
+  <div class="card">
+    <strong>Associate Software Engineer</strong> — Dynamic Solution Innovators (2024–Present)
+    <ul>
+      <li>Optimized database queries using indexing and caching strategies.</li>
+      <li>Designed fault-tolerant systems with retry and circuit breaker patterns.</li>
+      <li>Improved system stability and security via production patching.</li>
+    </ul>
+  </div>
 
-    <div class="card">
-        <h3>Assistant Software Engineer</h3>
-        <p><b>Dynamic Solution Innovators</b> | 2021 - 2024</p>
-        <p>Built event-driven microservices with Spring Boot and messaging queues, improving scalability.</p>
-    </div>
+  <div class="card">
+    <strong>Assistant Software Engineer</strong> — DSI (2021–2024)
+    <ul>
+      <li>Built event-driven microservices using Spring Boot and Artemis MQ.</li>
+      <li>Improved Oracle-based system performance via query optimization.</li>
+      <li>Implemented JUnit & Mockito testing frameworks.</li>
+    </ul>
+  </div>
 
-    <div class="card">
-        <h3>Junior Software Engineer</h3>
-        <p><b>Dynamic Solution Innovators</b> | 2020 - 2021</p>
-        <p>Optimized database queries and improved application performance.</p>
-    </div>
+  <div class="card">
+    <strong>Junior Software Engineer</strong> — DSI (2020–2021)
+    <ul>
+      <li>Improved system performance using caching and optimization techniques.</li>
+      <li>Enhanced legacy enterprise applications.</li>
+    </ul>
+  </div>
 
+  <div class="card">
+    <strong>Software Engineer Intern</strong> — Samsung R&D Bangladesh (2020)
+    <ul>
+      <li>Built Spring Boot services for Samsung Health & Bixby integration.</li>
+      <li>Worked on voice-driven backend systems.</li>
+    </ul>
+  </div>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+  <h3>Projects</h3>
 
-    <div class="card project">
-        <h3>Sync Service</h3>
-        <p>Middleware for syncing user data using event-driven architecture and MongoDB tracking.</p>
-    </div>
+  <div class="card">
+    <strong>Syncing Service</strong>
+    <p>Event-driven middleware using Spring Boot, MongoDB, and ActiveMQ for async processing.</p>
+  </div>
 
-    <div class="card project">
-        <h3>Centralized Config Service</h3>
-        <p>Node.js service for managing configs across multiple applications.</p>
-    </div>
+  <div class="card">
+    <strong>Centralized Management Platform</strong>
+    <p>Multi-app configuration platform using Node.js (Hapi.js) and MongoDB.</p>
+  </div>
 
-    <div class="card project">
-        <h3>Database Migration</h3>
-        <p>Migrated Oracle systems to PostgreSQL with optimized queries.</p>
-    </div>
+  <div class="card">
+    <strong>Enterprise Database Migration (Oracle to PostgreSQL)</strong>
+    <p>Large-scale database migration to AWS Aurora with performance tuning and QA collaboration.</p>
+  </div>
 
+  <div class="card">
+    <strong>Enterprise Security Hardening & Vulnerability Remediation</strong>
+    <p>Fixed vulnerabilities across Spring Boot systems and upgraded security frameworks.</p>
+  </div>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-        <a href="mailto:kawsher.98@gmail.com">kawsher.98@gmail.com</a>
-        <a href="https://github.com/kawsher-hamid98" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/kawsher98" target="_blank">LinkedIn</a>
-    </div>
+  <h3>Contact</h3>
+  <div class="card">
+    Email: kawsher.98@gmail.com<br/>
+    Phone: +880-1799397962<br/>
+    GitHub: github.com<br/>
+    LinkedIn: linkedin.com
+  </div>
 </section>
 
-</div>
-
 <footer>
-    <p>© 2026 Kawsher Hamid</p>
+  © 2026 MdKawsher Hamid Mazumder • Backend & Distributed Systems Engineer
 </footer>
 
 </body>
