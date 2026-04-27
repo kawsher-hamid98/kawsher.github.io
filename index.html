@@ -1,128 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kawsher Hamid | Backend Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-        }
+<style>
+:root {
+    --primary: #0f172a;
+    --accent: #3b82f6;
+    --light: #f8fafc;
+    --gray: #64748b;
+}
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        nav {
-            background: #555;
-            padding: 10px;
-            text-align: center;
-        }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light);
+    color: var(--primary);
+}
 
-        nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        nav a:hover {
-            color: #ffd700;
-        }
+header h1 {
+    font-size: 2.5rem;
+}
 
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-        }
+header p {
+    margin-top: 10px;
+    color: #cbd5f5;
+}
 
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
+nav {
+    background: white;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-        .project {
-            margin-bottom: 15px;
-        }
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #333;
-            color: #fff;
-            margin-top: 20px;
-        }
-    </style>
+nav a:hover {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent);
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skills span {
+    display: inline-block;
+    background: #e2e8f0;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+.contact a {
+    display: block;
+    margin: 5px 0;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: white;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Your Name</h1>
-    <p>Java Backend Developer | Spring Boot | Node.js</p>
+    <h1>Md Kawsher Hamid Mazumder</h1>
+    <p>Backend-Focused Full Stack Engineer | Java | Spring Boot | Microservices</p>
 </header>
 
 <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a software engineer with experience in backend development using Java, Spring Boot, and Node.js.
-            I enjoy building scalable systems and learning new technologies.
-        </p>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Backend-focused full stack engineer with 5+ years of experience building secure, scalable applications 
+        using Java, Spring Boot, and microservices. Strong in performance optimization, system design, and 
+        clean architecture.
+    </p>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java & Spring Boot</li>
-            <li>Node.js & Express</li>
-            <li>React / Vue</li>
-            <li>SQL & MongoDB</li>
-            <li>Docker & AWS</li>
-        </ul>
-    </section>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Node.js</span>
+        <span>Next.js</span>
+        <span>PHP</span>
+        <span>React</span>
+        <span>MongoDB</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>Jenkins</span>
+        <span>Microservices</span>
+        <span>AWS</span>
+        <span>OAuth2</span>
+        <span>Kafka / MQ</span>
+    </div>
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+<section id="experience">
+    <h2>Experience</h2>
 
-        <div class="project">
-            <h3>Appointment Booking System</h3>
-            <p>Built a scalable booking platform with REST APIs.</p>
-        </div>
+    <div class="card">
+        <h3>Associate Software Engineer</h3>
+        <p><b>Dynamic Solution Innovators</b> | 2024 - Present</p>
+        <p>Improved database performance, implemented fault-tolerant systems, and enhanced system security.</p>
+    </div>
 
-        <div class="project">
-            <h3>Inventory Management System</h3>
-            <p>Real-time tracking system using Node.js and MongoDB.</p>
-        </div>
+    <div class="card">
+        <h3>Assistant Software Engineer</h3>
+        <p><b>Dynamic Solution Innovators</b> | 2021 - 2024</p>
+        <p>Built event-driven microservices with Spring Boot and messaging queues, improving scalability.</p>
+    </div>
 
-    </section>
+    <div class="card">
+        <h3>Junior Software Engineer</h3>
+        <p><b>Dynamic Solution Innovators</b> | 2020 - 2021</p>
+        <p>Optimized database queries and improved application performance.</p>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-        <p>GitHub: https://github.com/yourusername</p>
-        <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-    </section>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card project">
+        <h3>Core Adapter</h3>
+        <p>Middleware for syncing user data using event-driven architecture and MongoDB tracking.</p>
+    </div>
+
+    <div class="card project">
+        <h3>Centralized Configuration Service</h3>
+        <p>Node.js service for managing configs across multiple applications.</p>
+    </div>
+
+    <div class="card project">
+        <h3>Database Migration</h3>
+        <p>Migrated Oracle systems to PostgreSQL (AWS Aurora) with optimized queries.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        <a href="mailto:kawsher.98@gmail.com">kawsher.98@gmail.com</a>
+        <a href="https://github.com/kawsher-hamid98" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/kawsher98" target="_blank">LinkedIn</a>
+    </div>
+</section>
 
 </div>
 
 <footer>
-    <p>© 2026 Your Name. All Rights Reserved.</p>
+    <p>© 2026 Kawsher Hamid</p>
 </footer>
 
 </body>
