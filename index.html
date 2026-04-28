@@ -1,75 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Md Kawsher Hamid Mazumder | Full Stack Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Md Kawsher Hamid Mazumder</title>
 
 <style>
-body {
+* {
 margin: 0;
+padding: 0;
+box-sizing: border-box;
 font-family: Arial, sans-serif;
+scroll-behavior: smooth;
+}
+
+body {
 background: #0f172a;
 color: #e2e8f0;
 line-height: 1.6;
 }
 
-/* NAVBAR (RESPONSIVE) */
 nav {
-position: sticky;
-top: 0;
-background: #0b1220;
-padding: 12px 20px;
-border-bottom: 1px solid #1f2937;
-z-index: 1000;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 15px 30px;
+background: #111827;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 .nav-links {
 display: flex;
-gap: 18px;
-align-items: center;
+gap: 20px;
 }
 
-nav a {
-color: #94a3b8;
+.nav-links a {
+color: #e2e8f0;
 text-decoration: none;
-font-weight: bold;
+transition: 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
 color: #38bdf8;
 }
 
-/* Hamburger */
 .hamburger {
 display: none;
 flex-direction: column;
 cursor: pointer;
-gap: 4px;
 }
 
 .hamburger span {
-width: 25px;
 height: 3px;
-background: #e2e8f0;
+width: 25px;
+background: #fff;
+margin: 4px;
 }
 
-/* MOBILE */
+header {
+text-align: center;
+padding: 80px 20px;
+background: #1e293b;
+}
+
+header h1 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+header a {
+color: #38bdf8;
+text-decoration: none;
+}
+
+.container {
+padding: 40px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+section {
+margin-bottom: 50px;
+}
+
+h2 {
+margin-bottom: 20px;
+border-left: 4px solid #38bdf8;
+padding-left: 10px;
+}
+
+h3 {
+margin-top: 15px;
+color: #38bdf8;
+}
+
+.card {
+background: #1e293b;
+padding: 20px;
+margin: 15px 0;
+border-radius: 10px;
+}
+
+ul {
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.badge {
+display: inline-block;
+background: #334155;
+padding: 5px 10px;
+margin: 5px;
+border-radius: 5px;
+font-size: 14px;
+}
+
+#summary p {
+background: #1e293b;
+padding: 15px;
+border-radius: 10px;
+}
+
 @media (max-width: 768px) {
 .nav-links {
 display: none;
 flex-direction: column;
-background: #0b1220;
+background: #111827;
 position: absolute;
 top: 60px;
-right: 0;
-width: 200px;
-padding: 15px;
-border-left: 1px solid #1f2937;
-border-bottom: 1px solid #1f2937;
+right: 20px;
+padding: 10px;
+border-radius: 10px;
 }
 
 .nav-links.active {
@@ -80,80 +143,8 @@ display: flex;
 display: flex;
 }
 }
-
-header {
-text-align: center;
-padding: 60px 20px;
-background: linear-gradient(135deg, #1e293b, #0f172a);
-}
-
-header h1 {
-font-size: 40px;
-color: #38bdf8;
-margin: 0;
-}
-
-header p {
-color: #94a3b8;
-margin: 6px 0;
-}
-
-header a {
-color: #38bdf8;
-text-decoration: none;
-margin: 0 10px;
-font-weight: bold;
-}
-
-.container {
-max-width: 1100px;
-margin: auto;
-padding: 40px 20px;
-}
-
-section {
-margin-bottom: 30px;
-padding: 20px;
-background: #1e293b;
-border-radius: 10px;
-}
-
-h2 {
-color: #38bdf8;
-border-bottom: 1px solid #334155;
-padding-bottom: 5px;
-}
-
-.card {
-background: #0f172a;
-padding: 15px;
-border-radius: 8px;
-border: 1px solid #334155;
-margin-top: 10px;
-}
-
-.badge {
-display: inline-block;
-background: #334155;
-padding: 6px 10px;
-margin: 4px;
-border-radius: 6px;
-font-size: 12px;
-}
-
-ul {
-margin: 10px 0 0;
-padding-left: 18px;
-}
-
-li {
-margin-bottom: 6px;
-}
-
-html {
-scroll-behavior: smooth;
-}
 </style>
+
 </head>
 
 <body>
@@ -189,6 +180,14 @@ scroll-behavior: smooth;
 <a href="https://github.com/kawsher-hamid98" target="_blank">GitHub</a>
 </p>
 </header>
+
+<!-- SUMMARY -->
+<section id="summary" class="container">
+<h2>Summary</h2>
+<p>
+Full Stack Software Engineer with experience in Java, Spring Boot, React, and microservices architecture. Skilled in building scalable backend systems, REST APIs, and modern frontend applications. Experienced in database optimization, system design, and enterprise-level application development.
+</p>
+</section>
 
 <div class="container">
 
@@ -227,6 +226,7 @@ scroll-behavior: smooth;
 
 <div class="card">
 <h3>Associate Software Engineer (2024 – Present)</h3>
+<p><b>Dynamic Solution Innovators (DSi)</b></p>
 <ul>
 <li>Improved backend performance using caching and query optimization</li>
 <li>Built scalable microservices with fault-tolerant architecture</li>
@@ -236,6 +236,7 @@ scroll-behavior: smooth;
 
 <div class="card">
 <h3>Assistant Software Engineer (2021 – 2024)</h3>
+<p><b>Dynamic Solution Innovators (DSi)</b></p>
 <ul>
 <li>Developed event-driven microservices using Spring Boot + ActiveMQ</li>
 <li>Built REST APIs for frontend applications</li>
@@ -245,6 +246,7 @@ scroll-behavior: smooth;
 
 <div class="card">
 <h3>Junior Software Engineer (2020 – 2021)</h3>
+<p><b>Dynamic Solution Innovators (DSi)</b></p>
 <ul>
 <li>Implemented backend features and production bug fixes</li>
 <li>Supported API debugging and frontend integration</li>
@@ -253,13 +255,15 @@ scroll-behavior: smooth;
 </div>
 
 <div class="card">
-<h3>Software Engineer Intern – Samsung R&D (2020)</h3>
+<h3>Software Engineer Intern (2020)</h3>
+<p><b>Samsung R&D Bangladesh</b></p>
 <ul>
 <li>Built Spring Boot REST APIs for Samsung Health integration</li>
 <li>Worked on Bixby voice command processing system</li>
 <li>Assisted in backend R&D for smart assistant features</li>
 </ul>
 </div>
+
 </section>
 
 <section id="education">
@@ -313,6 +317,7 @@ scroll-behavior: smooth;
 <li>Integrated Datadog for monitoring and alerts</li>
 </ul>
 </div>
+
 </section>
 
 <section id="contact">
