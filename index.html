@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Md Kawsher Hamid Mazumder | Full-Stack Software Engineer</title>
+
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif;}
     body{background:#0b1220;color:#e5e7eb;line-height:1.6;}
@@ -17,26 +18,18 @@
       padding:16px 10%;border-bottom:1px solid #1f2937;
     }
 
-    header h1{font-size:16px;color:#38bdf8;letter-spacing:0.5px;}
-
     nav a{margin-left:16px;font-size:13px;color:#cbd5e1;}
     nav a:hover{color:#38bdf8;}
 
-    .hero{
-      padding:90px 10%;text-align:left;
-      background:radial-gradient(circle at top,#111827,#0b1220);
-    }
+    .hero{padding:90px 10%;background:radial-gradient(circle at top,#111827,#0b1220);}
+    .hero img{width:120px;height:120px;border-radius:50%;border:3px solid #38bdf8;margin-bottom:20px;}
+    .hero h2{font-size:38px;margin-bottom:10px;}
+    .hero p{color:#94a3b8;max-width:750px;}
 
-    .hero h2{font-size:40px;margin-bottom:10px;}
-    .hero p{color:#94a3b8;max-width:800px;font-size:16px;}
-
-    .meta{
-      margin-top:14px;color:#cbd5e1;font-size:13px;
-    }
+    .meta{margin-top:14px;font-size:13px;color:#cbd5e1;}
 
     section{padding:70px 10%;}
-
-    h3{color:#38bdf8;font-size:20px;margin-bottom:18px;}
+    h3{color:#38bdf8;margin-bottom:18px;}
 
     .card{
       background:#111827;
@@ -46,12 +39,6 @@
       margin-bottom:14px;
     }
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:10px;
-    }
-
     .tag{
       display:inline-block;
       background:#1e293b;
@@ -59,7 +46,6 @@
       border-radius:6px;
       font-size:12px;
       margin:4px;
-      color:#cbd5e1;
     }
 
     footer{
@@ -70,10 +56,11 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>MdKawsher Mazumder</h1>
+  <h1>Md Kawsher Hamid Mazumder</h1>
   <nav>
     <a href="#summary">Summary</a>
     <a href="#skills">Skills</a>
@@ -84,11 +71,14 @@
 </header>
 
 <section class="hero">
-  <h2>Backend-Focused Software Engineer</h2>
+  <img src="your-image.jpg" alt="Profile Photo">
+
+  <h2>Full-Stack Software Engineer</h2>
   <p>
-    5+ years of experience building scalable backend systems using Java, Spring Boot, and microservices.
-    Strong focus on performance optimization, security, and distributed systems architecture.
+    Full-Stack Engineer with 5+ years of experience building end-to-end web applications,
+    from responsive user interfaces to scalable backend systems.
   </p>
+
   <div class="meta">
     Dhaka, Bangladesh • +880-1799397962 • 
     <a href="mailto:kawsher.98@gmail.com">kawsher.98@gmail.com</a> • 
@@ -100,70 +90,46 @@
 <section id="summary">
   <h3>Summary</h3>
   <div class="card">
-    Backend-Focused Full Stack Engineer with experience in designing secure, scalable, and high-performance systems.
-    Skilled in REST APIs, microservices, database optimization, CI/CD, and cloud-ready architecture using Docker and Jenkins.
+    Full-Stack Software Engineer experienced in designing scalable systems across frontend and backend.
+    Skilled in building APIs, modern UI, microservices, and optimizing application performance.
   </div>
 </section>
 
 <section id="skills">
   <h3>Technical Skills</h3>
   <div class="card">
-    <strong>Backend:</strong><br/>
-    <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Hapi.js</span>
-    <br/><br/>
 
     <strong>Frontend:</strong><br/>
-    <span class="tag">React.js</span><span class="tag">Vue.js</span><span class="tag">JSP</span><span class="tag">Bootstrap</span>
+    <span class="tag">React.js</span>
+    <span class="tag">Next.js</span>
+    <span class="tag">Vue.js</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">TypeScript</span>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+
     <br/><br/>
 
-    <strong>Databases:</strong><br/>
-    <span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Oracle</span>
+    <strong>Backend:</strong><br/>
+    <span class="tag">Java</span>
+    <span class="tag">Spring Boot</span>
+    <span class="tag">Node.js</span>
+    <span class="tag">PHP</span>
+
     <br/><br/>
 
-    <strong>DevOps:</strong><br/>
-    <span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Git</span><span class="tag">Bash</span>
+    <strong>Database:</strong><br/>
+    <span class="tag">MongoDB</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">Oracle</span>
+
     <br/><br/>
 
-    <strong>Architecture:</strong><br/>
-    <span class="tag">Microservices</span><span class="tag">OAuth2</span><span class="tag">JWT</span><span class="tag">ActiveMQ</span><span class="tag">Performance Tuning</span>
-  </div>
-</section>
+    <strong>Tools:</strong><br/>
+    <span class="tag">Docker</span>
+    <span class="tag">Jenkins</span>
+    <span class="tag">Git</span>
 
-<section id="experience">
-  <h3>Experience</h3>
-
-  <div class="card">
-    <strong>Associate Software Engineer</strong> — Dynamic Solution Innovators (2024–Present)
-    <ul>
-      <li>Optimized database queries using indexing and caching strategies.</li>
-      <li>Designed fault-tolerant systems with retry and circuit breaker patterns.</li>
-      <li>Improved system stability and security via production patching.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Assistant Software Engineer</strong> — DSI (2021–2024)
-    <ul>
-      <li>Built event-driven microservices using Spring Boot and Artemis MQ.</li>
-      <li>Improved Oracle-based system performance via query optimization.</li>
-      <li>Implemented JUnit & Mockito testing frameworks.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Junior Software Engineer</strong> — DSI (2020–2021)
-    <ul>
-      <li>Improved system performance using caching and optimization techniques.</li>
-      <li>Enhanced legacy enterprise applications.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Software Engineer Intern</strong> — Samsung R&D Bangladesh (2020)
-    <ul>
-      <li>Built Spring Boot services for Samsung Health & Bixby integration.</li>
-      <li>Worked on voice-driven backend systems.</li>
-    </ul>
   </div>
 </section>
 
@@ -172,23 +138,37 @@
 
   <div class="card">
     <strong>Syncing Service</strong>
-    <p>Event-driven middleware using Spring Boot, MongoDB, and ActiveMQ for async processing.</p>
+    <p>
+      Designed and developed an event-driven backend system using Spring Boot, MongoDB, and ActiveMQ 
+      to handle asynchronous data processing between multiple services, improving system responsiveness 
+      and reliability.
+    </p>
   </div>
 
   <div class="card">
     <strong>Centralized Management Platform</strong>
-    <p>Multi-app configuration platform using Node.js (Hapi.js) and MongoDB.</p>
+    <p>
+      Built a scalable configuration management platform using Node.js (Hapi.js) and MongoDB, 
+      enabling centralized control of multiple applications and reducing manual configuration overhead.
+    </p>
   </div>
 
   <div class="card">
-    <strong>Enterprise Database Migration (Oracle to PostgreSQL)</strong>
-    <p>Large-scale database migration to AWS Aurora with performance tuning and QA collaboration.</p>
+    <strong>Enterprise Database Migration</strong>
+    <p>
+      Led migration of enterprise systems from Oracle to PostgreSQL, optimizing queries and data structures 
+      to improve performance, reduce costs, and ensure system stability during transition.
+    </p>
   </div>
 
   <div class="card">
-    <strong>Enterprise Security Hardening & Vulnerability Remediation</strong>
-    <p>Fixed vulnerabilities across Spring Boot systems and upgraded security frameworks.</p>
+    <strong>Security Hardening</strong>
+    <p>
+      Identified and resolved security vulnerabilities across multiple applications by upgrading frameworks 
+      and implementing secure coding practices, improving overall system security and compliance.
+    </p>
   </div>
+
 </section>
 
 <section id="contact">
@@ -196,13 +176,13 @@
   <div class="card">
     Email: <a href="mailto:kawsher.98@gmail.com">kawsher.98@gmail.com</a><br/>
     Phone: +880-1799397962<br/>
-    GitHub: <a href="https://github.com/kawsher-hamid98" target="_blank">github.com</a><br/>
-    LinkedIn: <a href="https://linkedin.com/in/kawsher98" target="_blank">linkedin.com</a>
+    GitHub: <a href="https://github.com/YOUR_USERNAME" target="_blank">github.com</a><br/>
+    LinkedIn: <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">linkedin.com</a>
   </div>
 </section>
 
 <footer>
-  © 2026 MdKawsher Hamid Mazumder • Backend & Distributed Systems Engineer
+  © 2026 Md Kawsher Hamid Mazumder
 </footer>
 
 </body>
