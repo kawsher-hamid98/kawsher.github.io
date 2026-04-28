@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Md Kawsher Hamid Mazumder | Full Stack Engineer</title>
 
 <style>
@@ -14,28 +14,55 @@
         line-height: 1.6;
     }
 
-    nav {
+    /* NAVBAR */
+    .navbar {
         position: sticky;
         top: 0;
         background: #0b1220;
-        padding: 12px;
-        display: flex;
-        justify-content: center;
-        gap: 18px;
         border-bottom: 1px solid #1f2937;
         z-index: 1000;
     }
 
-    nav a {
+    .nav-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo {
+        color: #38bdf8;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 18px;
+    }
+
+    .nav-links a {
         color: #94a3b8;
         text-decoration: none;
         font-weight: bold;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
         color: #38bdf8;
     }
 
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: #e2e8f0;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* HEADER */
     header {
         text-align: center;
         padding: 60px 20px;
@@ -108,19 +135,51 @@
     html {
         scroll-behavior: smooth;
     }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #1e293b;
+            padding: 12px;
+            border-radius: 8px;
+            width: 180px;
+            border: 1px solid #334155;
+        }
+
+        .nav-links.show {
+            display: flex;
+        }
+    }
 </style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Portfolio</div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 </nav>
 
 <!-- HEADER -->
@@ -137,7 +196,6 @@
 
 <div class="container">
 
-<!-- SKILLS -->
 <section id="skills">
     <h2>Technical Skills</h2>
 
@@ -168,7 +226,6 @@
     <span class="badge">Git</span>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
     <h2>Experience</h2>
 
@@ -209,7 +266,6 @@
     </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
     <h2>Education</h2>
 
@@ -218,12 +274,10 @@
         <ul>
             <li>Southeast University, Dhaka</li>
             <li>2014 – 2018</li>
-            <li>Software Engineering, Data Structures, Algorithms, DBMS</li>
         </ul>
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
@@ -231,8 +285,6 @@
         <h3>SyncService – Data Synchronization Platform</h3>
         <ul>
             <li>Event-driven system using Spring Boot + ActiveMQ</li>
-            <li>Handled asynchronous data sync across enterprise systems</li>
-            <li>Built React dashboard for monitoring system flow</li>
         </ul>
     </div>
 
@@ -240,31 +292,10 @@
         <h3>Configuration Management System</h3>
         <ul>
             <li>Built full-stack system using Next.js + Node.js</li>
-            <li>Enabled real-time configuration updates across services</li>
-            <li>Designed scalable distributed architecture</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Oracle → PostgreSQL Migration</h3>
-        <ul>
-            <li>Migrated enterprise database to AWS Aurora PostgreSQL</li>
-            <li>Optimized queries and ORM performance</li>
-            <li>Ensured zero-downtime migration strategy</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Security Monitoring Platform</h3>
-        <ul>
-            <li>Built Spring Boot + React security dashboard</li>
-            <li>Implemented JWT authentication & role-based access</li>
-            <li>Integrated Datadog for monitoring and alerts</li>
         </ul>
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <ul>
@@ -275,6 +306,12 @@
 </section>
 
 </div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
